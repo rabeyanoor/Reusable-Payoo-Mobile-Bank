@@ -14,10 +14,10 @@ document
         // parseIn(pin) na diye "1234" --> etak avabe string a convert kore nilay hobe.
         window.location.href = "./main.html"
       } else {
-        alert("pin thik nai");
+        al("pin thik nai");
       }
     } else {
-      alert("need valid acount number");
+      console.log("need valid acount number");
     }
   });
 

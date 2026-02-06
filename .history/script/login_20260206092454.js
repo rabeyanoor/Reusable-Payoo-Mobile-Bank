@@ -8,16 +8,16 @@ document
     event.preventDefault();
     const acountNumber = document.getElementById("Acount-number").value;
     const pin = document.getElementById("pin").value;
-    const convertedPin = parseInt(pin)
+    const convertedPin = parseIn(pin)
     if (acountNumber.length === 11) {
       if (convertedPin === 1234) {
         // parseIn(pin) na diye "1234" --> etak avabe string a convert kore nilay hobe.
-        window.location.href = "./main.html"
+        window.location.href = "./main.html";
       } else {
-        alert("pin thik nai");
+        console.log("pin thik nai");
       }
     } else {
-      alert("need valid acount number");
+      console.log("need valid acount number");
     }
   });
 

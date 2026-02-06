@@ -17,7 +17,7 @@ document
         alert("pin thik nai");
       }
     } else {
-      alert("need valid acount number");
+      console.log("need valid acount number");
     }
   });
 

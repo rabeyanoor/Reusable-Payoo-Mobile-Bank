@@ -1,25 +1,22 @@
 // alert()
 
 console.log("Login functionality comming");
-// step-1 = ID k dorchi getElementById diye
-document
-  .getElementById("login-btn")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    const acountNumber = document.getElementById("Acount-number").value;
-    const pin = document.getElementById("pin").value;
-    const convertedPin = parseInt(pin)
-    if (acountNumber.length === 11) {
-      if (convertedPin === 1234) {
-        // parseIn(pin) na diye "1234" --> etak avabe string a convert kore nilay hobe.
-        window.location.href = "./main.html"
-      } else {
-        alert("pin thik nai");
-      }
-    } else {
-      alert("need valid acount number");
+// step-1 = ID k dorchi getElementById diye 
+document.getElementById("login-btn").addEventListener("click", function (event) {
+  event.preventDefault();
+  const acountNumber=document.getElementById("Acount-number").value;
+  const pin =document.getElementById("pin").value;
+  if(acountNumber.length===11){
+    if(pin.length === 4){
+      console.log("okay tikh ache");
     }
-  });
+  }
+  else{
+    console.log("need valid acount number");
+  }
+});
+
+
 
 // //1- get the mobile number input
 //   const numberInput = document.getElementById("input-number");
